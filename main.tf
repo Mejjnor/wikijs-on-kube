@@ -12,5 +12,5 @@ terraform {
 module "vpc" {
   source = "./networking/vpc"
   vpc_cidr_block = var.vpc_cidr_block
-  vpc_subnets_list = null
+  vpc_subnets_count = var.vpc_subnets_count
 }
