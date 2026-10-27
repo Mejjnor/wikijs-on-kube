@@ -9,8 +9,8 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
-module "vpc" {
-  source = "./networking/vpc"
+module "aws_vpc" {
+  source = "./networking/aws_vpc"
   env = var.env
   naming_prefix = var.naming_prefix
   vpc_cidr_block = var.vpc_cidr_block
